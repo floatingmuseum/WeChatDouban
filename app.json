@@ -1,0 +1,26 @@
+{
+  "pages":[
+    "pages/inTheaters/inTheaters",
+    "pages/comingSoon/comingSoon",
+    "pages/top250/top250",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[{
+      "pagePath":"pages/inTheaters/inTheaters",
+      "text":"正在热映"
+    },{
+      "pagePath":"pages/comingSoon/comingSoon",
+      "text":"即将上映"
+    },{
+      "pagePath":"pages/top250/top250",
+      "text":"Top250"
+    }]
+  }
+}
