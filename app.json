@@ -13,12 +13,18 @@
   },
   "tabBar":{
     "list":[{
+      "iconPath":"images/inTheatre.png",
+      "selectedIconPath":"images/inTheatre_selected.png",
       "pagePath":"pages/inTheaters/inTheaters",
       "text":"正在热映"
     },{
+      "selectedIconPath": "images/comingSoon_selected.png",
+      "iconPath": "images/comingSoon.png",
       "pagePath":"pages/comingSoon/comingSoon",
       "text":"即将上映"
     },{
+      "selectedIconPath": "images/top250_selected.png",
+      "iconPath": "images/top250.png",
       "pagePath":"pages/top250/top250",
       "text":"Top250"
     }]
