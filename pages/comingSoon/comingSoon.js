@@ -15,6 +15,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var self = this
     wx.request({
       url: "https://api.douban.com/v2/movie/coming_soon",
       header: {
@@ -24,7 +25,7 @@ Page({
         console.log("commingSoon...request...failed")
       }, success: function (res) {
         console.log("commingSoon...request...success:" + res.data)
-        this.handleData(res.data)
+        self.handleData(res.data)
       }
     })
   },
@@ -80,5 +81,9 @@ Page({
 
   handleData: function (data) {
     console.log(data.count)
+    var subjects = data.subjects
+    for(var index in subjects){
+      console.log("index:"+subjects[index].title)
+    }
   }
 })
