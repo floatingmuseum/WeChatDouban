@@ -1,6 +1,11 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function (options) {
+    console.log("App...onLaunch...path:" + options.path)
+    console.log("App...onLaunch...query:" + options.query)
+    console.log("App...onLaunch...scene:" + options.scene)//场景值 由何处打开小程序
+    console.log("App...onLaunch...shareTicket:" + options.shareTicket)
+
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,7 +38,21 @@ App({
       }
     })
   },
+  onShow: function (options) {
+    // Do something when show.当小程序启动，或从后台进入前台显示，会触发 onShow
+    console.log("App...onShow")
+  },
+  onHide: function () {
+    // Do something when hide.当小程序从前台进入后台，会触发 onHide
+    console.log("App...onHide")
+  },
+  onError: function (msg) {
+    //当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
+    console.log("App...onError...masg:" + msg)
+  },
   globalData: {
-    userInfo: null
+    //在这里列举的全局数据，可以在各自页面中通过 getApp().globalData.userInfo 获得
+    userInfo: null,
+    testInfo:"你获取到TestInfo了"
   }
 })

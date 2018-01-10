@@ -1,3 +1,31 @@
 <view class="container">
+<input></input>
 <text>top250</text>
+<view>{{"hello"+name}}</view>
+<image src="{{imageUrl}}" mode="aspectFit"></image>
+<button bindtap='changeName'>click me</button>
+
+<view wx:for="{{array}}"> {{index}}:{{item}} </view>
+<view wx:for="{{array}}" wx:for-index="idx" wx:for-item="itemName">
+  {{idx}}: {{itemName}}
 </view>
+
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>
+</view>
+
+<view hidden="{{flag ? true : false}}"> Hidden </view>
+
+<switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
+<button bindtap="switch"> Switch </button>
+<button bindtap="addToFront"> Add to the front </button>
+
+<switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
+<button bindtap="addNumberToFront"> Add to the front </button>

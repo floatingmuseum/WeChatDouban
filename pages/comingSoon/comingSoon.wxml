@@ -1,3 +1,7 @@
 <view class="container">
 <text>comingSoon</text>
+<image src="{{poster}}" mode="aspectFit"></image>
+  <block wx:for="{{posters}}" wx:for-item="poster">
+    <image src="{{poster}}" mode="aspectFit"></image>
+  </block>
 </view>
