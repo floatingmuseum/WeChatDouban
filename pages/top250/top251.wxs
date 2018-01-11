@@ -1,0 +1,3 @@
+var top250foo = require("top250.wxs");
+console.log(top250foo.foo);
+console.log(top250foo.func("from top251"));

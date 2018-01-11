@@ -1,7 +1,7 @@
 <view class="container">
 <input></input>
 <text>top250</text>
-<view>{{"hello"+name}}</view>
+<view style='margin:60rpx;'>{{"hello"+name}}</view>
 <image src="{{imageUrl}}" mode="aspectFit"></image>
 <button bindtap='changeName'>click me</button>
 
@@ -10,22 +10,28 @@
   {{idx}}: {{itemName}}
 </view>
 
-<template name="staffName">
-  <view>
-    FirstName: {{firstName}}, LastName: {{lastName}}
-  </view>
-</template>
-
-<template is="staffName" data="{{...staffA}}"></template>
-<template is="staffName" data="{{...staffB}}"></template>
-<template is="staffName" data="{{...staffC}}"></template>
-</view>
-
 <view hidden="{{flag ? true : false}}"> Hidden </view>
 
 <switch wx:for="{{objectArray}}" wx:key="unique" style="display: block;"> {{item.id}} </switch>
-<button bindtap="switch"> Switch </button>
+<button bindtap="switch" style='margin-left:0rpx;'> Switch </button>
 <button bindtap="addToFront"> Add to the front </button>
 
 <switch wx:for="{{numberArray}}" wx:key="*this" style="display: block;"> {{item}} </switch>
 <button bindtap="addNumberToFront"> Add to the front </button>
+
+<view wx:if="{{condition}}">看得到我吗?</view>
+
+<template name="testTemplate">
+<view>{{name}}</view>
+<view>{{age}}</view>
+<view>{{job}}</view>
+</template>
+
+<template is="testTemplate" data="{{...tempalteData}}"/>
+<wxs src="top250.wxs" module="top" />
+<view>{{top.foo}}</view>
+<view>{{top.func(555)}}</view>
+<view>{{top.top251}}</view>
+
+<wxs src="top251.wxs" module="top251" />
+ </view> 

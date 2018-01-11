@@ -80,6 +80,7 @@ Page({
   },
 
   handleData: function (data) {
+    console.log(JSON.stringify(data))//将对象转化为json字符串
     console.log(data.count)
     var subjects = data.subjects
     for(var index in subjects){

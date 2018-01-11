@@ -1,0 +1,18 @@
+var foo = "Hello world from top250.wxs";
+var num = 9;
+var newObj={
+  'string': 1,  //object 的 key 可以是字符串
+  const_var: 2,  //object 的 key 也可以是符合变量定义规则的标识符
+  func: { 'num1': "3", 'num2': 4}, //object 的 value 可以是任何类型
+}
+var func = function(parm){
+  console.log("newObj:"+newObj.string+"..."+newObj.const_var+"..."+newObj.func.num1+"..."+newObj.func.num2)
+  console.log("arguments:"+arguments.length+"..."+arguments[0])
+  return "Hello func "+parm;
+}
+
+
+module.exports={
+  foo:foo,
+  func:func
+}

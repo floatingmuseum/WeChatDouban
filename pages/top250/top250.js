@@ -12,15 +12,16 @@ Page({
     name:"Curry",
     array:["Curry","Rose","Dirk","Webber","Duncan"],
 
-    staffA: { firstName: 'Hulk', lastName: 'Hu' },
-    staffB: { firstName: 'Shang', lastName: 'You' },
-    staffC: { firstName: 'Gideon', lastName: 'Lin' },
-
     flag:true,
     imageUrl : "",
     a:1,
     b:2,
 
+    tempalteData:{
+      name:"Danny",
+      age:"27",
+      job:"coder"
+    },
 
     objectArray: [
       { id: 5, unique: 'unique_5' },
@@ -30,10 +31,13 @@ Page({
       { id: 1, unique: 'unique_1' },
       { id: 0, unique: 'unique_0' },
     ],
-    numberArray: [1, 2, 3, 4]
+    numberArray: [1, 2, 3, 4],
+
+    condition:false
   },
 
   changeName:function(e){
+    console.log(e)
     common.sayHello("top250")
     console.log("GlobalInfo:"+app.globalData.testInfo)
     this.setData({
@@ -123,5 +127,11 @@ Page({
     this.setData({
       numberArray: this.data.numberArray
     })
+  },
+  clickInner:function(){
+console.log("触摸Inner")
+  },
+  clickOuter:function(){
+    console.log("触摸Outer")
   }
 })
