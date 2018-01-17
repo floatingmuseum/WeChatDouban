@@ -1,32 +1,37 @@
 {
-  "pages":[
+  "pages": [
     "pages/inTheaters/inTheaters",
     "pages/comingSoon/comingSoon",
     "pages/top250/top250",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/detail/detail"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
-  "tabBar":{
-    "list":[{
-      "iconPath":"images/inTheatre.png",
-      "selectedIconPath":"images/inTheatre_selected.png",
-      "pagePath":"pages/inTheaters/inTheaters",
-      "text":"正在热映"
-    },{
-      "selectedIconPath": "images/comingSoon_selected.png",
-      "iconPath": "images/comingSoon.png",
-      "pagePath":"pages/comingSoon/comingSoon",
-      "text":"即将上映"
-    },{
-      "selectedIconPath": "images/top250_selected.png",
-      "iconPath": "images/top250.png",
-      "pagePath":"pages/top250/top250",
-      "text":"Top250"
-    }]
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "images/inTheatre.png",
+        "selectedIconPath": "images/inTheatre_selected.png",
+        "pagePath": "pages/inTheaters/inTheaters",
+        "text": "正在热映"
+      },
+      {
+        "selectedIconPath": "images/comingsoon_selected.png",
+        "iconPath": "images/comingSoon.png",
+        "pagePath": "pages/comingSoon/comingSoon",
+        "text": "即将上映"
+      },
+      {
+        "selectedIconPath": "images/top250_selected.png",
+        "iconPath": "images/top250.png",
+        "pagePath": "pages/top250/top250",
+        "text": "Top250"
+      }
+    ]
   }
 }

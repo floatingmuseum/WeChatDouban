@@ -1,1 +1,39 @@
 /* pages/comingSoon/comingSoon.wxss */
+
+.movie-list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie-item {
+  padding: 4rpx;
+  width: 350rpx;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.movie-item-image {
+  width: 350rpx;
+  height: 525rpx;
+}
+
+.movie-item-title {
+  color: black;
+}
+
+.divide-line-vertical{
+  color: black;
+  width: 4rpx;
+  height: auto;
+}
+
+.divide-line-horizontal{
+  color: black;
+  width: auto;
+  height: 4rpx;
+}
