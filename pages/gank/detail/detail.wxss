@@ -1,0 +1,25 @@
+/* pages/gank/detail/detail.wxss */
+.category-title{
+  color: black;
+  font-weight: bold;
+  font-size: 40rpx
+}
+.itemListContainer{
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column
+}
+.itemContainer{
+  padding: 10rpx;
+  /* display: flex;
+  flex-direction: row */
+}
+.itemTitle{
+  color: grey;
+  font-size: 30rpx
+}
+.itemAuthor{
+  margin-left: 10rpx;
+  color: green;
+  font-size: 30rpx
+}

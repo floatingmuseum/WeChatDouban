@@ -1,6 +1,6 @@
 /* pages/comingSoon/comingSoon.wxss */
 
-.movie-list {
+.gank-list {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -8,7 +8,7 @@
   justify-content: space-around;
 }
 
-.movie-item {
+.gank-item {
   padding: 4rpx;
   width: 350rpx;
   height: auto;
@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.movie-item-image {
+.gank-item-image {
   width: 350rpx;
   height: 525rpx;
 }

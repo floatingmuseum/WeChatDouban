@@ -1,16 +1,17 @@
 {
   "pages": [
     "pages/inTheaters/inTheaters",
-    "pages/comingSoon/comingSoon",
+    "pages/gank/gank",
+    "pages/gank/detail/detail",
     "pages/top250/top250",
-    "pages/logs/logs",
-    "pages/detail/detail"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [
@@ -23,8 +24,8 @@
       {
         "selectedIconPath": "images/comingsoon_selected.png",
         "iconPath": "images/comingSoon.png",
-        "pagePath": "pages/comingSoon/comingSoon",
-        "text": "即将上映"
+        "pagePath": "pages/gank/gank",
+        "text": "Gank"
       },
       {
         "selectedIconPath": "images/top250_selected.png",

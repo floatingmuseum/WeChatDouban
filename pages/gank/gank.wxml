@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='gank-list'>
+    <block wx:for-items="{{girls}}" wx:for-index="index" wx:for-item="girl">
+      <view class='gank-item' bindtap='toGankDetail' data-index='{{index}}'>
+        <image src='{{girl.url}}' class='gank-item-image' />
+        <text class='gank-item-title'>{{girl.publishedAt}}</text>
+      </view>
+      <view wx:if="{{index%2==0}}" class="divide-line-vertical" />
+    </block>
+  </view>
+</view>

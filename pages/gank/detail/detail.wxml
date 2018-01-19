@@ -1,0 +1,66 @@
+<!--pages/gank/detail/detail.wxml-->
+<view class="container">
+  <view class="itemListContainer" wx:if='{{androidHidden}}'>
+    <text class="category-title">Android</text>
+    <block wx:for-items="{{androids}}" wx:for-index="index" wx:for-item="android">
+      <view class="itemContainer" >
+        <text class="itemTitle">{{android.desc}}</text>
+        <text class="itemAuthor">({{android.who}})</text>
+      </view>
+    </block>
+  </view>
+  <view class="itemListContainer" wx:if='{{iosHidden}}'>
+    <text class="category-title">IOS</text>
+    <block wx:for-items="{{ioss}}" wx:for-index="index" wx:for-item="ios">
+      <view class="itemContainer">
+        <text class="itemTitle">{{ios.desc}}</text>
+        <text class="itemAuthor">({{ios.who}})</text>
+      </view>
+    </block>
+  </view>
+  <view class="itemListContainer" wx:if='{{frontEndHidden}}'>
+    <text class="category-title">前端</text>
+    <block wx:for-items="{{frontEnds}}" wx:for-index="index" wx:for-item="frontEnd">
+      <view class="itemContainer">
+        <text class="itemTitle">{{frontEnd.desc}}</text>
+        <text class="itemAuthor">({{frontEnd.who}})</text>
+      </view>
+    </block>
+  </view>
+  <view class="itemListContainer" wx:if='{{recommendHidden}}'>
+    <text class="category-title">瞎推荐</text>
+    <block wx:for-items="{{recommends}}" wx:for-index="index" wx:for-item="recommend">
+      <view class="itemContainer">
+        <text class="itemTitle">{{recommend.desc}}</text>
+        <text class="itemAuthor">({{recommend.who}})</text>
+      </view>
+    </block>
+  </view>
+  <view class="itemListContainer" wx:if='{{expandHidden}}'>
+    <text class="category-title">拓展资源</text>
+    <block wx:for-items="{{expands}}" wx:for-index="index" wx:for-item="expand">
+      <view class="itemContainer">
+        <text class="itemTitle">{{expand.desc}}</text>
+        <text class="itemAuthor">({{expand.who}})</text>
+      </view>
+    </block>
+  </view>
+  <!-- <view class="itemListContainer" wx:if='{{welfareHidden}}'>
+    <text class="category-title">福利</text>
+    <block wx:for-items="{{welfares}}" wx:for-index="index" wx:for-item="welfare">
+      <view class="itemContainer">
+        <text class="itemTitle">{{welfare.desc}}</text>
+        <text class="itemAuthor">({{welfare.who}})</text>
+      </view>
+    </block>
+  </view> -->
+  <view class="itemListContainer" wx:if='{{restHidden}}'>
+    <text class="category-title">休息视频</text>
+    <block wx:for-items="{{rests}}" wx:for-index="index" wx:for-item="rest">
+      <view class="itemContainer">
+        <text class="itemTitle">{{rest.desc}}</text>
+        <text class="itemAuthor">({{rest.who}})</text>
+      </view>
+    </block>
+  </view>
+</view>

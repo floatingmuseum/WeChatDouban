@@ -50,7 +50,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    wx.showLoading({
+      title: '努力加载中...',
+      mask: true,
+    })
+    var self = this
+    wx.request({
+      url: "https://api.douban.com/v2/movie/top250",
+      header: {
+        "Content-Type": "application/text"
+      },
+      fail: function (res) {
+        console.log("top250...request...failed")
+        wx.hideLoading()
+      }, success: function (res) {
+        console.log("top250...request...success:" + res.data)
+        // self.handleData(res.data)
+        wx.hideLoading()
+      }
+    })
   },
 
   /**
